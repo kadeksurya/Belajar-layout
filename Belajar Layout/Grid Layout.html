@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Teamsuryans.com/gridlayout</title>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 15px;
+  background-color: grey;
+  padding: 10px;
+}
+
+html {
+  font-family: "arial";
+  }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Team Surya NS Grid Layout</h1>
+
+<p>Ini adalah Grid Layout Dari Website Team Surya NS</p>
+
+<div class="grid-container">
+  <div class="item1">Header</br>(Team Surya NS)</div>
+  <div class="item2">Menu</br>(Tentang)</br>(Kontak)</br>(Home)</br>(Dll)</div>
+  <div class="item3">Main</br>(Tentang)</div>  
+  <div class="item4">Right</br>(Most Popular)</div>
+  <div class="item5">Footer</br>(copyright)</div>
+
+</div>
+
+</body>
+</html>
